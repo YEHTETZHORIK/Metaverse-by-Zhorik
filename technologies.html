@@ -1,0 +1,189 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Technologies in the Metaverse</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #0a0a23;
+            color: #ffffff;
+            margin: 0;
+            padding: 0;
+        }
+
+        .navbar {
+            background-color: #1f1f38;
+            padding: 10px 0;
+        }
+
+        .container {
+            width: 90%;
+            margin: auto;
+            max-width: 1200px;
+        }
+
+        .logo {
+            color: #ffffff;
+            font-size: 24px;
+            text-decoration: none;
+        }
+
+        .nav-links {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .nav-links li {
+            display: inline-block;
+            margin-left: 20px;
+        }
+
+        .nav-links a {
+            color: #ffffff;
+            text-decoration: none;
+            font-size: 18px;
+            transition: color 0.3s ease;
+        }
+
+        .nav-links a:hover {
+            color: #f39c12;
+        }
+
+        .menu-toggle {
+            display: none;
+        }
+
+        .hero {
+            background: url('https://source.unsplash.com/1600x900/?technology,network') no-repeat center center/cover;
+            height: 90vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin: 0;
+        }
+
+        .hero p {
+            font-size: 24px;
+            margin: 20px 0 0;
+        }
+
+        @media (max-width: 768px) {
+            .menu-toggle {
+                display: block;
+                cursor: pointer;
+            }
+
+            .menu-toggle .bar {
+                display: block;
+                width: 25px;
+                height: 3px;
+                background-color: #ffffff;
+                margin: 5px auto;
+            }
+
+            .nav-links {
+                display: none;
+                width: 100%;
+                text-align: center;
+                background-color: #1f1f38;
+            }
+
+            .nav-links.active {
+                display: block;
+            }
+
+            .nav-links li {
+                display: block;
+                margin: 10px 0;
+            }
+
+            .hero h1 {
+                font-size: 32px;
+            }
+
+            .hero p {
+                font-size: 18px;
+            }
+        }
+
+        footer {
+            background-color: #1f1f38;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        footer .social-links {
+            margin-top: 10px;
+        }
+
+        footer .social-links img {
+            margin: 0 10px;
+            width: 24px;
+            height: 24px;
+            filter: invert(100%);
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">Metaverse</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="technologies.html">Technologies</a></li>
+                <li><a href="applications.html">Applications</a></li>
+                <li><a href="future.html">Future</a></li>
+                <li><a href="get-involved.html">Get Involved</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Technologies Section -->
+    <section class="container" style="padding: 100px 0;">
+        <h1>Technologies in the Metaverse</h1>
+        <p>The Metaverse is powered by cutting-edge technologies such as blockchain, virtual reality (VR), augmented reality (AR), and artificial intelligence (AI). These technologies enable the creation of immersive digital environments, decentralized economies, and intelligent virtual beings. As these technologies evolve, the Metaverse will become more advanced and integrated into our daily lives.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Metaverse. All Rights Reserved.</p>
+            <div class="social-links">
+                <a href="#"><img src="https://img.icons8.com/material-rounded/24/000000/facebook-new.png" alt="Facebook"></a>
+                <a href="#"><img src="https://img.icons8.com/material-rounded/24/000000/twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="https://img.icons8.com/material-rounded/24/000000/instagram-new.png" alt="Instagram"></a>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Mobile Menu Toggle
+        const mobileMenu = document.getElementById('mobile-menu');
+        const navLinks = document.querySelector('.nav-links');
+
+        mobileMenu.addEventListener('click', () => {
+            navLinks.classList.toggle('active');
+        });
+    </script>
+</body>
+</html>
